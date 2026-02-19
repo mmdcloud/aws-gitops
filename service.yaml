@@ -3,7 +3,6 @@ kind: Service
 metadata:
   name: nodeapp-svc
 spec:
-  internalTrafficPolicy: Local
   selector:
     app: nodeapp
   ports:
