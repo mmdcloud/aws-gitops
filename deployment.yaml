@@ -4,7 +4,7 @@ metadata:
   name: nodeapp
   namespace: default
   annotations:
-    kubernetes.io/change-cause: "version 2"
+    kubernetes.io/change-cause: "version 1"
 spec:
   replicas: 12
   strategy:
@@ -28,7 +28,7 @@ spec:
           effect: "NoSchedule"
       containers:
         - name: nodeapp
-          image: mmd21/nodeapp:2
+          image: mmd21/nodeapp:1
           envFrom:
             - configMapRef:
                 name: my-config
